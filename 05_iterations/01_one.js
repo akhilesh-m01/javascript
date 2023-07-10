@@ -11,3 +11,4 @@ for(let i=0;i<arr.length;i++){
 }
 
 // break and continue
+// while and do-while
