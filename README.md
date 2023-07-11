@@ -1,2 +1,2 @@
 # javascript
-This is my javascript practise
+This is my javascript practice
