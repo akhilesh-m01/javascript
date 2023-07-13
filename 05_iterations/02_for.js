@@ -86,3 +86,5 @@ const fileExt = [
 fileExt.forEach( (val)=>{
     console.log(val.lang,val.ext);
 } )
+
+// comments test

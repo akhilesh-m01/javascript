@@ -10,4 +10,5 @@ const addit = nums
                 .map( (num) => num+1 )
                 .filter((num)=>num<40);
 
-console.log(addit);
+console.log(addit);  
+// comments test
