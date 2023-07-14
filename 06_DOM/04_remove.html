@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>remove and replace</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <div class="main">
+        <ul class="language">
+            <li>javascript</li>
+        </ul>
+    </div>
+</body>
+<script>
+    function addLang(l){
+        const li = document.createElement('li');
+        li.innerHTML = `${l}`;
+        const lang = document.querySelector('.language');
+        lang.appendChild(li);
+    }
+    addLang('python');
+    addLang('golang');
+
+    function addOptLang(l){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(l));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptLang('cpp');
+
+    // edit
+    function editli(lang){
+        const l2 = document.querySelector('li:nth-child(2)');
+        const newl2 = document.createElement('li');
+        newl2.textContent = lang;
+        l2.replaceWith(newl2);
+    }
+    editli("c lang")
+
+    function removeEle(){
+        const li = document.querySelector('li:last-child');
+        li.remove();
+    }
+    removeEle();
+</script>
+</html>
