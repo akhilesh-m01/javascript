@@ -1,0 +1,26 @@
+body{
+    background-color: #212121;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+}
+
+span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+/* form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin:10px;
+} */
