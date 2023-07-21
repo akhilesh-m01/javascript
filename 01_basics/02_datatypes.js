@@ -40,3 +40,21 @@ console.log(typeof null);
 // 7.symbol => unique
 
 // 8.object
+
+// revision
+
+// Primitive
+// 1. Number - integers and floating-point numbers
+// 2. String - sequence of characters
+// 3. Boolean - true or false
+// 4. null - Intentional absence of value which is considered as an object by default
+// 5. undefined - declared but you have not assigned any value
+// 6. Symbol - Unique identifier
+
+
+// Non-primitive datatypes
+// 1. objects  - key:value pairs, contains properties and methods
+// 2. array - sequence of elements
+// 3. function - can be assigned to variables, passed as parameters and can be returned from a function.
+// 4. Date
+// 5. Regular Expressions

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Introduction</title>
+</head>
+<style>
+    li{
+        list-style: none;
+    }
+</style>
+<body>
+    <div>
+        <ul id="images">
+            <li><img width="200px" src="https://media.istockphoto.com/id/516449022/photo/lady-with-kayak.jpg?b=1&s=612x612&w=0&k=20&c=PsQQpGXVtV9dPDaH-DNEgeMAHjqkViCSQsSrkqlHKRk=" alt="" id="one"></li>
+            <li><img width="200px" src="https://media.istockphoto.com/id/1285296688/photo/success-woman-hiker-hiking-on-sunrise-mountain-peak-young-woman-with-backpack-rise-to-the.jpg?b=1&s=612x612&w=0&k=20&c=yfZgmxufw0G4x_u_uX7tefy5hXMVACppXdZVssJVvRw=" alt="" id="two"></li>
+            <li><img width="200px" src="https://media.istockphoto.com/id/1301431065/photo/man-hiker-on-top-of-a-mountain-peak.jpg?b=1&s=612x612&w=0&k=20&c=uK5SF008yXyqYqbcBC_wUz-SFzBmx3dGKmFiolLJ7oA=" alt="" id="three"></li>
+            <li><img width="200px" src="https://media.istockphoto.com/id/1383796215/photo/silhouette-of-man-holding-binoculars-on-mountain-peak-against-bright-sunlight-sky-background.jpg?b=1&s=612x612&w=0&k=20&c=7qil3OYFwP814_tFl1b-nPHloTptreuOeWA0HOLE5pE=" alt="" id="four"></li>
+            <li><img width="200px" src="https://media.istockphoto.com/id/1254564400/photo/hikers-reflection-of-mount-taranaki-egmont-in-natural-lake-middle.jpg?b=1&s=612x612&w=0&k=20&c=-sAIQKVerUpbjn7noNRSX2KIv92DB5yZknDsBTVrTmM=" alt="" id="five"></li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.querySelector('#three').addEventListener('click',(e)=>{
+        e.stopPropagation();
+        console.log("image clicked");
+    })
+
+    document.querySelector('#images').addEventListener('click',(e)=>{
+        console.log("ul clciked");
+    })
+    // when you click on the three both events gets triggered 
+    // because of event bubbling,to stop it we can use e.stopPropagation()
+</script>
+</html>

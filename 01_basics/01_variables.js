@@ -16,3 +16,10 @@ accountMail = "a@apple.com";
 accountCity = "fairfax";
 
 console.table([accountId,accountName,accountMail,accountCity,accountCountry]);
+
+// revision
+// Difference between const, let and var interms of scope and reassigning
+
+// 1. const - it is block scoped and can't be changed once assigned but we can change it when we use it with objects and arrays
+// 2. let - it is block scoped and can be modified
+// 3. var - it is function scoped because there are issues using this

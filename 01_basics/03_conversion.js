@@ -48,3 +48,14 @@ console.log(pnum2);
 // "33" = 33
 // "33ABC" = NaN
 // True = 1 /false = 0
+
+// type casting
+// 1. Implicit Type Casting
+// 2. Explicit Type Casting
+
+// 1. Implicit type casting - It is done automatically by JS when performing operations between different data types
+// 2. Explicit Type Casting - Manually convert from one datatype to another
+// 2.1 - parseInt() and parseFloat()
+// 2.2 - String() and .toString()
+// 2.3 - Boolean()
+// 2.4 - Number()
